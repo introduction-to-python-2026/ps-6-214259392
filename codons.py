@@ -1,6 +1,5 @@
 def create_codon_dict(file_path):
-    path = "data/codons.txt"
-    file = open(path)
+    file = open(file_path)
     rows = file.readlines()
     file.close()
     codon_dict = {}
@@ -9,5 +8,4 @@ def create_codon_dict(file_path):
      codon = cells [0]
      abbreviation = cells[2]
      codon_dict[codon] = abbreviation
-    print (codon_dict)  
-
+    return codon_dict 
